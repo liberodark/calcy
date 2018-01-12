@@ -1,0 +1,22 @@
+{
+  "name": "calcy",
+  "version": "1.0.0",
+  "description": "A Calculator app built with electron.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "package-win32": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.CompanyName=\"Calcy\"",
+    "package-mac": "electron-packager . --overwrite --asar=true --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . calcy --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Calcy App\"",
+    "package-linux": "electron-packager . calcy-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds",
+    "create-installer-mac": "electron-installer-dmg ./release-builds/Calcy\\ app-darwin-x64/Calcy\\ app.app calcy-app --out=release-builds --overwrite --icon=assets/icons/mac/icon.icns",
+    "create-installer-win": "node installers/windows/createinstaller.js",
+    "create-debian-installer": "electron-installer-debian --src release-builds/calcy-app-linux-x64/ --arch amd64 --config debian.json"
+  },
+  "author": "Varun A",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.7.10",
+    "electron-packager": "^10.1.1"
+  }
+}
