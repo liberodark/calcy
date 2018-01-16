@@ -16,6 +16,7 @@ body{
   color: #fff;
 }
 .btn{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   user-select: none;
   height: 2rem;
   width: 2rem;
