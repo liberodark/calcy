@@ -62,7 +62,7 @@ body{
   height: 100%;
 }
 .keys{
-  flex: 1px;
+  flex: 1;
   padding: 16px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
