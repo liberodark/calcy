@@ -86,7 +86,7 @@ body{
   border: 1px solid #ff5722;
   transition: background-color 0.25s,box-shadow 0.25s;
 }
-.eval:hover,.eval.active {
+.eval:hover,.eval.active,.eval:active {
   background-color: #f44336;
   border: 1px solid #f44336;
 }
