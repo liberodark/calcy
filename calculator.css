@@ -1,10 +1,10 @@
 html{
   font-size: 150%;
-  background: #fff;
+  background: #ddd;
 }
 body{
   background: #ddd;
-  font: 1.5rem 'Open Sans',sans-serif;
+  font: 1.5rem 'open_sanslight',sans-serif;
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -16,6 +16,7 @@ body{
   color: #fff;
 }
 .btn{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   user-select: none;
   height: 2rem;
   width: 2rem;
@@ -62,7 +63,7 @@ body{
   height: 100%;
 }
 .keys{
-  flex: 1px;
+  flex: 1;
   padding: 16px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -85,7 +86,7 @@ body{
   border: 1px solid #ff5722;
   transition: background-color 0.25s,box-shadow 0.25s;
 }
-.eval:hover,.eval.active {
+.eval:hover,.eval.active,.eval:active {
   background-color: #f44336;
   border: 1px solid #f44336;
 }
