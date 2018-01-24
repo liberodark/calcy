@@ -12,11 +12,11 @@ app.on('ready', () => {
     width: 350,
     height: 500,
     resizable: false,
-    title: 'Calculator App',
+    title: 'Calcy',
     backgroundColor:'#bccfc7',
     icon: path.join(__dirname, 'assets/icons/png/64x64.png')
   });
-  mainWindow.loadURL(`file://${__dirname}/index.html`)
+  mainWindow.loadURL(`file://${__dirname}/index.html`);
 
   const menuConfig = Menu.buildFromTemplate([
     {
